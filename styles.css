@@ -8,7 +8,6 @@
 *::-webkit-scrollbar {
   display: none;
 }
-
 .darkMode {
   --blendPercentOne: 80%;
   --blendPercentTwo: calc(100% - var(--blendPercentOne));
@@ -23,7 +22,7 @@
   /* --bgColorTwo: #555555; */
   --bgColorTwo: color-mix(in srgb, #555555 var(--blendPercentOne), var(--accentColorOne) var(--blendPercentTwo));
   --textDecColor: #dddddd;
-  --linkColorOne: #8888dd;
+  --linkColorOne: #5555dd;
   /* --borderColor: #020202; */
   --borderColor: color-mix(in srgb, #020202 var(--blendPercentOne), var(--accentColorOne), var(--blendPercentTwo));
   --QdarkMode: 1;
@@ -127,6 +126,9 @@ div {
   text-decoration-color: var(--textDecColor);
 }
 .altLinkFormat {
+  color: var(--linkColorOne);
+}
+a:visited {
   color: var(--linkColorOne);
 }
 .noNewLine {
